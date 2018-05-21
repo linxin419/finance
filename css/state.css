@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+html,
+body {
+	background: #f3f3f3;
+}
+
+nav li {
+	width: 50%;
+	text-align: center;
+	font-size: .32rem;
+	color: #313131;
+	line-height: 1.2rem;
+	height: 1.2rem;
+	position: relative;
+}
+
+nav li i {
+	width: 1.24rem;
+	height: .05rem;
+	position: absolute;
+	top: .9rem;
+	left: 50%;
+	margin-left: -.62rem;
+}
+
+nav li.on i {
+	background: #0192dd;
+}
+
+main .tab {
+	padding-top: .3rem;
+	padding-bottom: .17rem;
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 2.08rem;
+	left: 0;
+}
+
+main .order {
+	margin-top: 4.7rem;
+}
+
+main .tab li {
+	width: 33.33%;
+	height: 1.93rem;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+main .tab li.tab1 {
+	background-image: url('../img/state/tab_ico1.png');
+	background-size: 2.1rem 1.8rem;
+}
+
+main .tab li.tab1.on {
+	background-image: url('../img/state/tab_ico4.png');
+	background-size: 2.1rem 1.93rem;
+}
+
+main .tab li.tab2 {
+	background-image: url('../img/state/tab_ico2.png');
+	background-size: 2.1rem 1.8rem;
+}
+
+main .tab li.tab2.on {
+	background-image: url('../img/state/tab_ico5.png');
+	background-size: 2.1rem 1.93rem;
+}
+
+main .tab li.tab3 {
+	background-image: url('../img/state/tab_ico3.png');
+	background-size: 2.1rem 1.8rem;
+}
+
+main .tab li.tab3.on {
+	background-image: url('../img/state/tab_ico6.png');
+	background-size: 2.1rem 1.93rem;
+}
+
+.order li {
+	padding-bottom: .28rem;
+	margin-top: .1rem;
+	background: #fff;
+}
+
+.order li .view {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order li .number {
+	height: .8rem;
+	line-height: .8rem;
+	font-size: .22rem;
+	color: #a0a0a0;
+	border-bottom: dashed .02rem #eeeeee;
+}
+
+.order li .center {
+	font-size: .24rem;
+	color: #313131;
+	margin-top: .25rem;
+}
+
+.order li .center .money span {
+	font-size: .3rem;
+	color: #29b15f	;
+}
+
+.order li .spare {
+	font-size: .24rem;
+	margin-top: .2rem;
+}
+
+.order li .spare .num {
+	color: #ff0000;
+}
+
+.order li .spare a {
+	color: #313131;
+	padding-right: .23rem;
+	height: .37rem;
+	line-height: .37rem;
+	background: url('../img/state/right_ico.png') no-repeat right center;
+	background-size: .13rem .23rem;
+}
+
+/*头部修改*/
+
+header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: .88rem;
+	left: 0;
+	z-index: 9;
+	background: #f3f3f3;
+}
+
+.form {
+	margin-top: .88rem;
+}
+
+/*详情页面*/
+
+.form li {
+	background: #fff;
+	margin-top: .1rem;
+}
+
+.form li .view {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .3rem;
+	color: #313131;
+}
+
+.form li span {
+	width: 2.1rem;
+}
+
+.form li.money p {
+	color: #29b15f;
+}
+
+.form li.time p {
+	color: #ff0000;
+}
+
+.null {
+	width: 1.79rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 1.26rem;
+}

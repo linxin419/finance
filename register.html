@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>新会员注册</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/acceptHelp.css">
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/layer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="view">
+            <a href="javascript:history.go(-1)"></a> 新会员注册
+        </div>
+    </header>
+    <div class="form">
+        <div class="input">
+            <div class="view clearfix name">
+                <span class="fl">真实姓名：</span>
+                <input type="text" placeholder="请输入姓名" class="fl">
+            </div>
+        </div>
+        <div class="input">
+            <div class="view clearfix phone">
+                <span class="fl">手机号：</span>
+                <input type="number" placeholder="请输入手机号" class="fl">
+            </div>
+        </div>
+        <div class="input">
+            <div class="view clearfix password">
+                <span class="fl">登录密码：</span>
+                <input type="password" placeholder="请输入登录密码" class="fl">
+            </div>
+        </div>
+        <div class="input">
+            <div class="view clearfix password_two">
+                <span class="fl">二级密码：</span>
+                <input type="password" placeholder="请输入交易密码" class="fl">
+            </div>
+        </div>
+        <div class="input">
+            <div class="view clearfix vip">
+                <span class="fl">推荐会员：</span>
+                <input type="number" placeholder="请输入推荐您的会员手机号" class="fl">
+            </div>
+        </div>
+        <div class="input code">
+            <div class="view clearfix code">
+                <span class="fl">短信验证码：</span>
+                <input type="text" placeholder="请填写短信验证码" class="fl">
+                <em class="fr">发送验证码</em>
+            </div>
+        </div>
+    </div>
+    <div class="btn">确定提交</div>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script>
+        $(function() {
+            $('.btn').click(function() {
+                var name = $('.name inpput'),
+                    name_val = name.val(),
+                    phone = $('.phone input'),
+                    phone_val = phone.val(),
+                    password = $('.password input'),
+                    password_val = password.val(),
+                    password_two = $('.password_two input'),
+                    password_two_val = password_two.val(),
+                    vip = $('.vip input'),
+                    vip_val = vip.val(),
+                    code = $('.code input'),
+                    code_val = code.val();
+                if (name_val == '') {
+                    layer.open({
+                        content: '请输入姓名!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else if (phone_val == '') {
+                    layer.open({
+                        content: '请输入手机号!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else if (password_val == '') {
+                    layer.open({
+                        content: '请输入登录密码!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else if (password_two_val == '') {
+                    layer.open({
+                        content: '请输入交易密码!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else if (vip_val == '') {
+                    layer.open({
+                        content: '请输入推荐您的会员手机号!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else if (code_val == '') {
+                    layer.open({
+                        content: '请填写短信验证码!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                } else {
+                    layer.open({
+                        content: '注册完成，正在跳转!',
+                        skin: 'msg',
+                        time: 2 //2秒后自动关闭
+                    })
+                    setTimeout(function() { window.location.replace("login.html"); }, 2000)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.logo {
+	width: 2.14rem;
+	position: absolute;
+	left: 50%;
+	top: 1.05rem;
+	margin-left: -1.07rem;
+}
+
+.banner {
+	height: 5.06rem;
+	background: url('../img/index/banner.png') no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+
+.nav {
+	margin-bottom: 1.5rem;
+}
+
+.nav li {
+	width: 3.3rem;
+	margin-left: .3rem;
+	margin-top: .3rem;
+}

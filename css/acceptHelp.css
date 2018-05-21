@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+html,
+body {
+	background: #f3f3f3;
+	width: 100%;
+	height: 100%;
+}
+
+.form .input:first-child {
+	margin-top: 0;
+}
+
+.form .input {
+	background: #fff;
+	margin-top: .1rem;
+}
+
+.form .view {
+	height: 1rem;
+	line-height: 1rem;
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form span {
+	width: 2.5rem;
+	font-size: .3rem;
+	color: #313131;
+}
+
+.form input {
+	width: 2.45rem;
+	height: 1rem;
+	font-size: .3rem;
+}
+
+.form .code input {
+	width: 2.45rem;
+}
+
+.form i {
+	font-style: normal;
+	font-size: .3rem;
+	color: #313131;
+}
+
+.form em {
+	color: #0192dd;
+	font-style: normal;
+	font-size: .3rem;
+}
+
+.mode {
+	margin-top: .6rem;
+	background: #fff;
+}
+
+.mode .view {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mode span {
+	line-height: 1rem;
+	font-size: .32rem;
+	color: #313131;
+	width: 2.16rem;
+}
+
+.mode ul {
+	width: 4.74rem;
+}
+
+.mode li {
+	height: 1rem;
+	line-height: 1rem;
+	margin-top: .01rem;
+	font-size: .3rem;
+	color: #313131;
+	background: url('../img/style/select_right.png') no-repeat center right;
+	background-size: .19rem .37rem;
+	cursor: pointer;
+}
+
+.mode i {
+	display: inline-block;
+	width: .48rem;
+	height: 1rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+	margin-right: .3rem;
+}
+
+.mode .zhifubao i {
+	background-image: url('../img/acceptHelp/mode_ico1.png');
+	background-size: .36rem .36rem;
+}
+
+.mode .weixin i {
+	background-image: url('../img/acceptHelp/mode_ico2.png');
+	background-size: .36rem .36rem;
+}
+
+.mode .yinhangka i {
+	background-image: url('../img/acceptHelp/mode_ico3.png');
+	background-size: .48rem .3rem;
+}
+
+.btn {
+	font-size: .3rem;
+	color: #ffffff;
+	text-align: center;
+	width: 6rem;
+	margin-left: auto;
+	margin-right: auto;
+	height: .8rem;
+	line-height: .8rem;
+	background: #0192dd;
+	border-radius: .5rem;
+	margin-top: .6rem;
+	cursor: pointer;
+}
+
+.logo {
+	width: 2.14rem;
+	position: absolute;
+	left: 50%;
+	top: 1.05rem;
+	margin-left: -1.07rem;
+}
+
+.banner {
+	height: 5.06rem;
+	background: url('../img/index/banner.png') no-repeat center;
+	background-size: 100%;
+	position: relative;
+}

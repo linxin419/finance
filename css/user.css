@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.logo {
+	width: 2.14rem;
+	position: absolute;
+	left: 50%;
+	top: 1.05rem;
+	margin-left: -1.07rem;
+}
+
+.banner {
+	height: 5.06rem;
+	background: url('../img/index/banner.png') no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+
+.banner .quit {
+	font-size: .3rem;
+	color: #ffffff;
+	position: absolute;
+	right: .3rem;
+	top: .5rem;
+}
+
+.list {
+	margin-bottom: 1.5rem;
+}
+
+.list li {
+	border-bottom: solid .01rem #e5e5e5;
+}
+
+.list li .view {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: .3rem;
+	color: #313131;
+	background: url('../img/style/select_right.png') no-repeat right center;
+	background-size: .19rem .37rem;
+}
+
+.list li i {
+	width: .36rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .35rem;
+}

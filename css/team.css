@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+html,
+body {
+	background: #f3f3f3;
+}
+
+nav li {
+	width: 50%;
+	text-align: center;
+	font-size: .32rem;
+	color: #313131;
+	line-height: 1.2rem;
+	height: 1.2rem;
+	position: relative;
+}
+
+nav li i {
+	width: 1.24rem;
+	height: .05rem;
+	position: absolute;
+	top: .9rem;
+	left: 50%;
+	margin-left: -.62rem;
+}
+
+nav li.on i {
+	background: #0192dd;
+}
+
+main .structure {
+	margin-top: .02rem;
+	font-size: .24rem;
+	color: #313131;
+	background: #fff;
+	/*height: .82rem;*/
+	line-height: .82rem;
+}
+
+main .structure.on .ico {
+	background-image: url('../img/team/team_ico1.png');
+	background-size: .26rem .26rem;
+}
+
+main .structure.no .ico {
+	background-image: url('../img/team/team_ico2.png');
+	background-size: .26rem .04rem;
+}
+
+main .structure .ico {
+	height: .82rem;
+	width: .6rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	cursor: pointer;
+}
+
+main .structure .name {
+	margin-left: 1.13rem;
+	margin-right: .35rem;
+}
+
+main .structure .state {
+	color: #a0a0a0;
+	margin-right: .3rem;
+}
+
+main .structure .num {
+	color: #a0a0a0;
+	margin-right: .5rem;
+}
+
+main .structure.shape1 {
+	margin-left: .2rem;
+}
+
+main .structure.shape1 .name {
+	margin-left: .93rem;
+}
+
+main .structure.shape2 {
+	margin-left: .4rem;
+}
+
+main .structure.shape2 .name {
+	margin-left: .73rem;
+}
+
+main .structure.shape3 {
+	margin-left: .2rem;
+}
+
+main .structure.shape3 .name {
+	margin-left: .53rem;
+}

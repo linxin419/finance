@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+main li {
+    border-bottom: solid .02rem #eeeeee;
+}
+
+main li .view {
+    width: 6.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .4rem;
+    height: 1.35rem;
+    background: url('../img/style/select_right.png') no-repeat right center;
+    background-size: .19rem .37rem;
+}
+
+main li .time {
+    font-size: .24rem;
+    color: #a0a0a0;
+}
+
+main li h5 {
+    font-weight: normal;
+    font-size: .3rem;
+    color: #313131;
+    margin-top: .2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 6.3rem;
+}
+
+main .details {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main .details .time {
+	font-size: .24rem;
+	color: #a0a0a0;
+	margin-top: .3rem;
+}
+
+main .details h5 {
+	font-weight: normal;
+	font-size: .34rem;
+	color: #313131;
+	margin-top: .45rem;
+	text-align: center;
+}
+
+main .details p {
+	font-size: .26rem;
+	color: #313131;
+	margin-top: .35rem;
+	line-height: .48rem;
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+html,
+body {
+	background: #f3f3f3;
+}
+
+main {
+	margin-top: .88rem;
+}
+
+main li {
+	background: #fff;
+	padding-top: .3rem;
+	margin-top: .1rem;
+	padding-bottom: .3rem;
+}
+
+main li .view {
+	width: 6.9rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main li .num {
+	font-size: .24rem;
+	color: #a0a0a0;
+}
+
+main li .num span {
+	margin-left: .55rem;
+}
+
+main li .info p {
+	font-size: .26rem;
+	color: #313131;
+	width: 50%;
+	margin-top: .2rem;
+}
+
+main li .info p.spare {
+	font-size: .3rem;
+}
+
+main li .info p.fr {
+	text-align: right;
+}
+
+main li .info p.money span {
+	color: #ffba4c;
+}
+
+main li.on .info p.money span {
+	color: #ff0000;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}

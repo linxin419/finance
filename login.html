@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/layer.js"></script>
+</head>
+
+<body>
+    <main>
+        <a href="forget.html" class="forget">忘记密码</a>
+        <div class="logo"><img src="img/style/logo.png" alt=""></div>
+        <div class="form">
+            <div class="input phone clearfix">
+                <span class="fl"></span>
+                <input class="fl" type="number" placeholder="填写手机号" maxlength="11">
+            </div>
+            <div class="input password clearfix">
+                <span class="fl"></span>
+                <input class="fl" type="password" placeholder="输入密码">
+            </div>
+        </div>
+        <div class="btn">登录</div>
+    </main>
+    <script type="text/javascript" src="js/style.js"></script>
+    <script>
+    $(function() {
+        $('.btn').click(function() {
+            var phone = $('.phone input'),
+                phone_val = phone.val(),
+                password = $('.password input'),
+                password_val = password.val();
+            if (!(phone_val == '13706945212')) {
+                layer.open({
+                    content: '号码错误！',
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                })
+            } else if (!(password_val == '0419')) {
+                layer.open({
+                    content: '密码错误！',
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                })
+            } else {
+                layer.open({
+                    content: '验证成功，准备跳转！',
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                })
+                setTimeout(function() { window.location.replace("index.html"); }, 2000)
+            }
+        })
+    })
+    </script>
+</body>
+
+</html>
